@@ -12,7 +12,7 @@ Este projeto tem como objetivo simular um sistema de **Software Delivery**, abor
 * Testes de software
 * Documentação e organização de projetos
 
-
+---
 
 ## 📋 Requisitos Funcionais
 
@@ -38,98 +38,48 @@ Este projeto tem como objetivo simular um sistema de **Software Delivery**, abor
 
 ## 🧪 Testes
 
-### 🔹 Teste de Cadastro de Usuário
+Os testes do projeto são executados de forma automatizada via terminal, garantindo a validação das funcionalidades do sistema.
 
-**Tipo:** Caixa preta
+### ▶️ Execução dos Testes
 
-**Objetivo:**
-Verificar se o usuário é cadastrado corretamente
+```bash
+# Instalar dependências (caso necessário)
+npm install
 
-**Passos:**
+# Executar os testes
+npm test
+📌 Resultado esperado
 
-1. Acessar tela de cadastro
-2. Preencher nome, e-mail e senha
-3. Clicar em "Cadastrar"
+Ao executar os testes, o terminal deve exibir:
 
-**Resultado esperado:**
+✔️ Testes executados com sucesso
+❌ Detalhes de falhas, caso ocorram
+📊 Objetivo dos Testes
 
-* Usuário cadastrado com sucesso
-* Mensagem de confirmação exibida
+Os testes automatizados validam:
 
-**Cenários alternativos:**
+Cadastro de usuários
+Login no sistema
+Cadastro de pedidos
+Atualização de status de entrega
+Fluxo completo de entrega
 
-* Campos vazios → exibir erro
-* E-mail inválido → bloquear cadastro
+⚠️ Observação: Os testes automatizados podem estar em fase de implementação, dependendo da evolução do projeto.
 
----
-
-### 🔹 Teste do Movimento de Entrega
-
-**Tipo:** Integração / E2E
-
-**Objetivo:**
-Validar o fluxo completo de entrega
-
-**Passos:**
-
-1. Criar pedido
-2. Atualizar status para "Em preparação"
-3. Atualizar status para "Saiu para entrega"
-4. Atualizar status para "Entregue"
-
-**Resultado esperado:**
-
-* Status atualizado corretamente
-* Histórico da entrega registrado
-
----
-
-## 📄 Documentos e Artefatos de Teste
+📄 Documentos e Artefatos de Teste
 
 Além do código, foram criados documentos auxiliares para organização dos testes:
 
-* 📑 **Plano de Teste** → define o que, como e quando testar
-* 📝 **Casos de Teste** → descrevem os passos para validar funcionalidades
-* 📊 **Relatórios de Teste** → registram os resultados obtidos
-
----
-
-### 🔹 Exemplo de Caso de Teste (Login)
-
-**Objetivo:**
-Validar login com credenciais corretas
-
-**Passos:**
-
-1. Acessar tela de login
-2. Inserir usuário válido
-3. Inserir senha válida
-4. Clicar em "Entrar"
-
-**Resultado esperado:**
-Usuário acessa o sistema com sucesso
-
----
-
-## ▶️ Como Executar
-
-```bash
+📑 Plano de Teste → define o que, como e quando testar
+📝 Casos de Teste → descrevem os passos para validar funcionalidades
+📊 Relatórios de Teste → registram os resultados obtidos
+▶️ Como Executar
 # Clonar o repositório
 git clone https://github.com/RobersonCodes/UC11.git
 
 # Acessar a pasta
 cd UC11
-```
+👨‍💻 Autor
 
----
-
-## 👨‍💻 Autor
-
-**Roberson de Oliveira**
+Roberson de Oliveira
 Estudante de Desenvolvimento de Software
-
----
-
-## 📌 Status do Projeto
-
-🚧 Em desenvolvimento
